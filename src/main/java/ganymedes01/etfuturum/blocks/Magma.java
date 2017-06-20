@@ -48,44 +48,23 @@ import net.minecraftforge.event.entity.player.UseHoeEvent;
 			setCreativeTab(EtFuturum.enableMagma? EtFuturum.creativeTab : null);
 		}
 		
-	    public MapColor getMapColor(int metadata)
-	    {
-	        return MapColor.netherrackColor;
-	    }
-	    
-	    public void onEntityWalk(World worldIn, int x, int y, int z, Entity entityIn)
-	    {
-	        if (!entityIn.isImmuneToFire() && entityIn instanceof EntityLivingBase)
-	        {
-	            entityIn.attackEntityFrom(DamageSource.cactus, 1.0F);
-	        }
-
-	        super.onEntityWalking(worldIn, x, y, z, entityIn);
-	    }
-	    
-	    public int getPackedLightmapCoords(int metadata, IBlockAccess source, int x, int y, int z)
-	    {
-	        return 15728880;
-	    }
-
+	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
+	   {
+	    float a = 0;
+		float f = 0.03125F;
+	    return AxisAlignedBB.getBoundingBox((double)((float)x + a), (double)y, (double)((float)z + a), (double)((float)(x + 1) - a), (double)((float)(y + 1) - f), (double)((float)(z + 1) - a));
+	   }
 		
-	/**	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
-	    {
-	        float a = 0;
-			float f = 0.03125F;
-	        return AxisAlignedBB.getBoundingBox((double)((float)x + a), (double)y, (double)((float)z + a), (double)((float)(x + 1) - a), (double)((float)(y + 1) - f), (double)((float)(z + 1) - a));
-	    }
-		
-		public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)
-		   {
-		    if (entity.isSneaking()){
-		    } else {
-		    	entity.attackEntityFrom(DamageSource.cactus, 1F);
-		    }
-		   }  */
+	public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)
+		  {
+		   if (entity.isSneaking()){
+		   } else {
+		    entity.attackEntityFrom(DamageSource.cactus, 1F);
+		   }
+		  }
 
-		@Override
-		public boolean isEnabled() {
-			return EtFuturum.enableMagma;
-		}
+	@Override
+	public boolean isEnabled() {
+		return EtFuturum.enableMagma;
+	}
 }
