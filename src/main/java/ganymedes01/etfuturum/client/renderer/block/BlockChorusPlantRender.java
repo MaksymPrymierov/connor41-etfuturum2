@@ -108,6 +108,8 @@ public class BlockChorusPlantRender extends BlockChorusFlowerRender {
 
 		renderer.setRenderBounds(conWidth, conWidth, conWidth, 1 - conWidth, 1 - conWidth, 1 - conWidth);
 		renderer.renderStandardBlock(block, x, y, z);
+		
+		renderer.renderAllFaces = false;
 
 		return true;
 	}
