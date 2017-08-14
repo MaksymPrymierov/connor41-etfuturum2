@@ -39,6 +39,7 @@ import net.minecraftforge.event.entity.player.UseHoeEvent;
 			super(Material.rock);
 			setBlockName(Utils.getUnlocalisedName("magma"));
 			setStepSound(soundTypeStone);
+			setHardness(0.5F);
 			setResistance(2.5F);
 			setHarvestLevel("pickaxe", 0);
 			setBlockTextureName("magma");
