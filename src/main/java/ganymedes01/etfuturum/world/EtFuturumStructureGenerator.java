@@ -4,9 +4,10 @@ import java.util.Random;
 
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.chunk.IChunkProvider;
 
-public class EtFuturumForestHouseGenerator implements IWorldGenerator {
+public class EtFuturumStructureGenerator implements IWorldGenerator {
 
 	public void generate(Random random, int chunkX, int chunkZ, World world,
 			IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
@@ -18,15 +19,17 @@ public class EtFuturumForestHouseGenerator implements IWorldGenerator {
 	}
 
 	private void generateSurface(World world, Random rand, int chunkX, int chunkZ) {
-		EtFuturumForestHouseGenerator foresthouse = new EtFuturumForestHouseGenerator();
 		
-		for(int i = 0; i < 2; i++) {
+		BiomeGenBase biome = world.getWorldChunkManager().getBiomeGenAt(chunkX, chunkZ);
 			
-			int x = chunkX + rand.nextInt(16);
-			int z = chunkZ + rand.nextInt(16);
-			int y = world.getHeightValue(x, z);
-			foresthouse.generate(world, )
-			
+		if ((biome == BiomeGenBase.roofedForest)) {
+			for (int i = 0; i < 1; i++) {
+				int x = chunkX + rand.nextInt(16);
+				int z = chunkZ + rand.nextInt(16);
+				int y = world.getHeightValue(x, z);
+				
+				new ForestHouse().generate(world, rand, x, y, z);
+			}
 			
 		}
 	}
