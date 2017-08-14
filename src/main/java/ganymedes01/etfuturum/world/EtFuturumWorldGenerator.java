@@ -108,6 +108,5 @@ public class EtFuturumWorldGenerator implements IWorldGenerator {
 			if (!grew)
 				world.setBlock(x, y + height, z, ModBlocks.chorus_flower, 5, 2);
 		}
-	}
-		
+	}	
 }
