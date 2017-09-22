@@ -6,7 +6,7 @@ import ganymedes01.etfuturum.ModBlocks;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 
-public class forestHouse47
+public class ForestHouse47
 {
 	public boolean generate47(World world, Random rand, int x, int y, int z)
     {
@@ -2518,7 +2518,7 @@ public class forestHouse47
 		world.setBlock(x + 49, y + 17, z + 66, Blocks.planks, 5, 3);
 		world.setBlock(x + 50, y + 17, z + 66, Blocks.planks, 5, 3);
 
-		new forestHouse48().generate48(world, rand, x, y, z);
+		new ForestHouse48().generate48(world, rand, x, y, z);
 		return true;
 
 	}
