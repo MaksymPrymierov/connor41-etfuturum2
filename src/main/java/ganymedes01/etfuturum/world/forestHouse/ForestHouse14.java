@@ -2,6 +2,7 @@ package ganymedes01.etfuturum.world.forestHouse;
 
 import java.util.Random;
 
+import ganymedes01.etfuturum.ModBlocks;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 
@@ -1369,9 +1370,9 @@ public class ForestHouse14{
 		world.setBlock(x + 34, y + 3, z + 47, Blocks.air, 0, 3);
 		world.setBlock(x + 35, y + 3, z + 47, Blocks.air, 0, 3);
 		world.setBlock(x + 36, y + 3, z + 47, Blocks.air, 0, 3);
-		world.setBlock(x + 37, y + 3, z + 47, Blocks.slime_block, 6, 3);
-		world.setBlock(x + 38, y + 3, z + 47, Blocks.slime_block, 6, 3);
-		world.setBlock(x + 39, y + 3, z + 47, Blocks.slime_block, 6, 3);
+		world.setBlock(x + 37, y + 3, z + 47, ModBlocks.stone, 6, 3);
+		world.setBlock(x + 38, y + 3, z + 47, ModBlocks.stone, 6, 3);
+		world.setBlock(x + 39, y + 3, z + 47, ModBlocks.stone, 6, 3);
 		world.setBlock(x + 40, y + 3, z + 47, Blocks.air, 0, 3);
 		world.setBlock(x + 41, y + 3, z + 47, Blocks.air, 0, 3);
 		world.setBlock(x + 42, y + 3, z + 47, Blocks.planks, 5, 3);
@@ -1430,9 +1431,9 @@ public class ForestHouse14{
 		world.setBlock(x + 34, y + 3, z + 48, Blocks.air, 0, 3);
 		world.setBlock(x + 35, y + 3, z + 48, Blocks.air, 0, 3);
 		world.setBlock(x + 36, y + 3, z + 48, Blocks.air, 0, 3);
-		world.setBlock(x + 37, y + 3, z + 48, Blocks.slime_block, 6, 3);
+		world.setBlock(x + 37, y + 3, z + 48, ModBlocks.stone, 6, 3);
 		world.setBlock(x + 38, y + 3, z + 48, Blocks.water, 0, 3);
-		world.setBlock(x + 39, y + 3, z + 48, Blocks.slime_block, 6, 3);
+		world.setBlock(x + 39, y + 3, z + 48, ModBlocks.stone, 6, 3);
 		world.setBlock(x + 40, y + 3, z + 48, Blocks.air, 0, 3);
 		world.setBlock(x + 41, y + 3, z + 48, Blocks.air, 0, 3);
 		world.setBlock(x + 42, y + 3, z + 48, Blocks.planks, 5, 3);
@@ -1462,7 +1463,7 @@ public class ForestHouse14{
 		world.setBlock(x + 5, y + 3, z + 49, Blocks.air, 0, 3);
 		world.setBlock(x + 6, y + 3, z + 49, Blocks.air, 0, 3);
 		world.setBlock(x + 7, y + 3, z + 49, Blocks.air, 0, 3);
-		world.setBlock(x + 8, y + 3, z + 49, etfuturum:fence_oak, 0, 3);
+		world.setBlock(x + 8, y + 3, z + 49, ModBlocks.fences[5]);
 		world.setBlock(x + 9, y + 3, z + 49, Blocks.planks, 0, 3);
 		world.setBlock(x + 10, y + 3, z + 49, Blocks.planks, 5, 3);
 		world.setBlock(x + 11, y + 3, z + 49, Blocks.air, 0, 3);
@@ -1491,9 +1492,9 @@ public class ForestHouse14{
 		world.setBlock(x + 34, y + 3, z + 49, Blocks.air, 0, 3);
 		world.setBlock(x + 35, y + 3, z + 49, Blocks.air, 0, 3);
 		world.setBlock(x + 36, y + 3, z + 49, Blocks.air, 0, 3);
-		world.setBlock(x + 37, y + 3, z + 49, Blocks.slime_block, 6, 3);
+		world.setBlock(x + 37, y + 3, z + 49, ModBlocks.stone, 6, 3);
 		world.setBlock(x + 38, y + 3, z + 49, Blocks.water, 0, 3);
-		world.setBlock(x + 39, y + 3, z + 49, Blocks.slime_block, 6, 3);
+		world.setBlock(x + 39, y + 3, z + 49, ModBlocks.stone, 6, 3);
 		world.setBlock(x + 40, y + 3, z + 49, Blocks.air, 0, 3);
 		world.setBlock(x + 41, y + 3, z + 49, Blocks.air, 0, 3);
 		world.setBlock(x + 42, y + 3, z + 49, Blocks.planks, 5, 3);

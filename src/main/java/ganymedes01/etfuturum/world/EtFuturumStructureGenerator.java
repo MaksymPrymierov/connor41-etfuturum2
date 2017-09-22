@@ -1,3 +1,4 @@
+/*
 package ganymedes01.etfuturum.world;
 
 import java.util.Random;
@@ -6,6 +7,7 @@ import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.chunk.IChunkProvider;
+import ganymedes01.etfuturum.world.ForestHouse;
 
 public class EtFuturumStructureGenerator implements IWorldGenerator {
 
@@ -35,3 +37,4 @@ public class EtFuturumStructureGenerator implements IWorldGenerator {
 	}
 	
 }
+*/
