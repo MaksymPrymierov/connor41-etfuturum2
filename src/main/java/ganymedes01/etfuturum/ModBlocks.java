@@ -87,7 +87,6 @@ public class ModBlocks {
 	public static final Block nether_wart_block = new NetherWartBlock();
 	public static final Block red_nether_bricks = new RedNetherBricks();
 	public static final Block bone_block = new BoneBlock();
-	public static final Block bed = new BlockFuturumBed();
 	
 
 	public static final Block[] doors = new Block[BlockWood.field_150096_a.length - 1];

@@ -118,7 +118,6 @@ public class EtFuturum {
 	public static boolean enableNetherWartBlock = true;
 	public static boolean enableRedNetherBricks = true;
 	public static boolean enableBoneBlock = true;
-	public static boolean enableBlockFuturumBed = true;
 
 	public static int maxStonesPerCluster = 34;
 
