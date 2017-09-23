@@ -339,7 +339,7 @@ public class ForestHouse37
 		world.setBlock(x + 21, y + 12, z + 16, Blocks.air, 0, 3);
 		world.setBlock(x + 22, y + 12, z + 16, Blocks.air, 0, 3);
 		world.setBlock(x + 23, y + 12, z + 16, Blocks.air, 0, 3);
-		world.setBlock(x + 24, y + 12, z + 16, ModBlocks.gates[5], 3, 3);
+		world.setBlock(x + 24, y + 12, z + 16, ModBlocks.gates[0], 3, 3);
 		world.setBlock(x + 25, y + 12, z + 16, Blocks.air, 0, 3);
 		world.setBlock(x + 26, y + 12, z + 16, Blocks.air, 0, 3);
 		world.setBlock(x + 27, y + 12, z + 16, Blocks.air, 0, 3);
@@ -1314,7 +1314,7 @@ public class ForestHouse37
 		world.setBlock(x + 21, y + 12, z + 32, Blocks.air, 0, 3);
 		world.setBlock(x + 22, y + 12, z + 32, Blocks.air, 0, 3);
 		world.setBlock(x + 23, y + 12, z + 32, Blocks.air, 0, 3);
-		world.setBlock(x + 24, y + 12, z + 32, ModBlocks.gates[5], 1, 3);
+		world.setBlock(x + 24, y + 12, z + 32, ModBlocks.gates[0], 1, 3);
 		world.setBlock(x + 25, y + 12, z + 32, Blocks.air, 0, 3);
 		world.setBlock(x + 26, y + 12, z + 32, Blocks.air, 0, 3);
 		world.setBlock(x + 27, y + 12, z + 32, Blocks.air, 0, 3);

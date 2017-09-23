@@ -1283,7 +1283,7 @@ public class ForestHouse56
 		world.setBlock(x + 33, y + 22, z + 20, ModBlocks.fences[5], 0, 3);
 		world.setBlock(x + 34, y + 22, z + 20, ModBlocks.fences[5], 0, 3);
 		world.setBlock(x + 35, y + 22, z + 20, ModBlocks.fences[5], 0, 3);
-		world.setBlock(x + 36, y + 22, z + 20, ModBlocks.gates[5], 0, 3);
+		world.setBlock(x + 36, y + 22, z + 20, ModBlocks.gates[0], 0, 3);
 		world.setBlock(x + 37, y + 22, z + 20, ModBlocks.fences[5], 0, 3);
 		world.setBlock(x + 38, y + 22, z + 20, Blocks.air, 0, 3);
 		world.setBlock(x + 39, y + 22, z + 20, Blocks.air, 0, 3);

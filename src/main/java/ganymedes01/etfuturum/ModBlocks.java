@@ -5,6 +5,7 @@ import java.lang.reflect.Field;
 import cpw.mods.fml.common.registry.GameRegistry;
 import ganymedes01.etfuturum.blocks.BlockBanner;
 import ganymedes01.etfuturum.blocks.BlockBeetroot;
+import ganymedes01.etfuturum.blocks.BlockFuturumBed;
 import ganymedes01.etfuturum.blocks.BlockSilkedMushroom;
 import ganymedes01.etfuturum.blocks.BlockWoodDoor;
 import ganymedes01.etfuturum.blocks.BlockWoodFence;
@@ -86,6 +87,7 @@ public class ModBlocks {
 	public static final Block nether_wart_block = new NetherWartBlock();
 	public static final Block red_nether_bricks = new RedNetherBricks();
 	public static final Block bone_block = new BoneBlock();
+	public static final Block bed = new BlockFuturumBed();
 	
 
 	public static final Block[] doors = new Block[BlockWood.field_150096_a.length - 1];
