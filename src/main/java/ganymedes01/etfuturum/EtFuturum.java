@@ -35,7 +35,6 @@ import ganymedes01.etfuturum.network.SetPlayerModelMessage;
 import ganymedes01.etfuturum.recipes.BrewingFuelRegistry;
 import ganymedes01.etfuturum.recipes.ModRecipes;
 import ganymedes01.etfuturum.world.EtFuturumNetherGenerator;
-import ganymedes01.etfuturum.world.EtFuturumStructureGenerator;
 import ganymedes01.etfuturum.world.EtFuturumWorldGenerator;
 import ganymedes01.etfuturum.world.OceanMonument;
 import net.minecraft.creativetab.CreativeTabs;
@@ -118,6 +117,7 @@ public class EtFuturum {
 	public static boolean enableNetherWartBlock = true;
 	public static boolean enableRedNetherBricks = true;
 	public static boolean enableBoneBlock = true;
+	public static boolean enableBlockConcretePowder = true;
 
 	public static int maxStonesPerCluster = 34;
 
@@ -129,7 +129,6 @@ public class EtFuturum {
 
 		GameRegistry.registerWorldGenerator(new EtFuturumWorldGenerator(), 0);
 		GameRegistry.registerWorldGenerator(new EtFuturumNetherGenerator(), 1);
-		GameRegistry.registerWorldGenerator(new EtFuturumStructureGenerator(), 2);
 
 		ModBlocks.init();
 		ModItems.init();
