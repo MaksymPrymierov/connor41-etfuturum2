@@ -262,8 +262,14 @@ public class ModRecipes {
 					new Object[]{ "A",
 				('A'), ModBlocks.bone_block});
 		}
-		
-	}
+		if (EtFuturum.enableBlockConcretePowder) {
+				for (int i = 0; i < ModBlocks.block_concrete_powder.length; i++){
+					GameRegistry.addRecipe(new ItemStack(ModBlocks.block_concrete_powder[i]),
+						new Object[]{ "ABB", "BBC", "CCC",
+						('A'), new ItemStack(Items.dye, 1, i), ('B'), Blocks.sand, ('C'), Blocks.gravel});
+				}
+			}
+		}
 	
 	private static void addShapedRecipe(ItemStack output, Object... objects) {
 		GameRegistry.addRecipe(new ShapedOreRecipe(output, objects));

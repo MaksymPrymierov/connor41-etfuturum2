@@ -93,6 +93,7 @@ public class ModBlocks {
 	public static final Block[] doors = new Block[BlockWood.field_150096_a.length - 1];
 	public static final Block[] fences = new Block[BlockWood.field_150096_a.length];
 	public static final Block[] gates = new Block[BlockWood.field_150096_a.length - 1];
+	public static final Block[] block_concrete_powder = new Block[BlockConcretePowder.colors.length];
 
 	static {
 		for (int i = 0; i < doors.length; i++)
@@ -103,6 +104,9 @@ public class ModBlocks {
 
 		for (int i = 0; i < gates.length; i++)
 			gates[i] = new BlockWoodFenceGate(i + 1);
+
+		for (int i = 0; i < block_concrete_powder.length; i++)
+			block_concrete_powder[i] = new BlockConcretePowder(i);
 	}
 
 	public static void init() {
