@@ -26,6 +26,14 @@ public class BlockConcretePowder extends BlockFalling implements IConfigurable {
 		setCreativeTab(EtFuturum.enableBlockConcretePowder ? EtFuturum.creativeTab : null);
 	}
 
+	/*public void replaceOnConcrete(World world, int x, int y, int z){
+		if(world.getBlockMaterial(x+1, y, z) == Material.water){
+
+			world.setBlock(x, y, z, ModBlocks.BlockConcretePowder);
+		}
+	}*/
+
+
 	@Override
 	public boolean isEnabled() {
 		return EtFuturum.enableBlockConcretePowder;
