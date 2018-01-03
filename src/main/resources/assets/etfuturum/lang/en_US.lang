@@ -123,7 +123,41 @@ tile.etfuturum.anvil.veryDamaged.name=Very Damaged Anvil
 tile.etfuturum.daylight_sensor.name=Daylight Sensor
 tile.etfuturum.nether_wart_block.name=Nether Wart Block
 tile.etfuturum.red_nether_bricks.name=Red Nether Bricks
-tile.etfuturum.bone_block.name=Bone Block
+tile.etfuturum.bone_block.name=Bone Block.name
+#
+tile.etfuturum.black_block_concrete_powder.name=Black Block Concrete Powder
+tile.etfuturum.red_block_concrete_powder.name=Red Block Concrete Powder
+tile.etfuturum.green_block_concrete_powder.name=Green Block Concrete Powder
+tile.etfuturum.brown_block_concrete_powder.name=Brown Block Concrete Powder
+tile.etfuturum.blue_block_concrete_powder.name=Blue Block Concrete Powder
+tile.etfuturum.purple_block_concrete_powder.name=Purple Block Concrete Powder
+tile.etfuturum.cyan_block_concrete_powder.name=Cyan Block Concrete Powder
+tile.etfuturum.silver_block_concrete_powder.name=Silver Block Concrete Powder
+tile.etfuturum.gray_block_concrete_powder.name=Gray Block Concrete Powder
+tile.etfuturum.pink_block_concrete_powder.name=Pink Block Concrete Powder
+tile.etfuturum.lime_block_concrete_powder.name=Lime Block Concrete Powder
+tile.etfuturum.yellow_block_concrete_powder.name=Yellow Block Concrete Powder
+tile.etfuturum.light_blue_block_concrete_powder.name=Light Blue Block Concrete Powder
+tile.etfuturum.magenta_block_concrete_powder.name=Magenta Block Concrete Powder
+tile.etfuturum.orange_block_concrete_powder.name=Orange Block Concrete Powder
+tile.etfuturum.white_block_concrete_powder.name=White Block Concrete Powder
+#
+tile.etfuturum.black_block_concrete.name=Black Block Concrete
+tile.etfuturum.red_block_concrete.name=Red Block Concrete 
+tile.etfuturum.green_block_concrete.name=Green Block Concrete 
+tile.etfuturum.brown_block_concrete.name=Brown Block Concrete 
+tile.etfuturum.blue_block_concrete.name=Blue Block Concrete 
+tile.etfuturum.purple_block_concrete.name=Purple Block Concrete 
+tile.etfuturum.cyan_block_concrete.name=Cyan Block Concrete 
+tile.etfuturum.silver_block_concrete.name=Silver Block Concrete 
+tile.etfuturum.gray_block_concrete.name=Gray Block Concrete 
+tile.etfuturum.pink_block_concrete.name=Pink Block Concrete 
+tile.etfuturum.lime_block_concrete.name=Lime Block Concrete 
+tile.etfuturum.yellow_block_concrete.name=Yellow Block Concrete 
+tile.etfuturum.light_blue_block_concrete.name=Light Blue Block Concrete 
+tile.etfuturum.magenta_block_concrete.name=Magenta Block Concrete 
+tile.etfuturum.orange_block_concrete.name=Orange Block Concrete 
+tile.etfuturum.white_block_concrete.name=White Block Concrete 
 
 # Banners
 item.banner.black.name=Black Banner

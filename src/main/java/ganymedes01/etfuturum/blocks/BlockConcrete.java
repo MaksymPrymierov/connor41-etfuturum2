@@ -4,34 +4,28 @@ import ganymedes01.etfuturum.EtFuturum;
 import ganymedes01.etfuturum.IConfigurable;
 import ganymedes01.etfuturum.core.utils.Utils;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
-import net.minecraft.world.World;
 
-public class BlockConcretePowder extends BlockFalling implements IConfigurable {
+public class BlockConcrete extends Block implements IConfigurable {
 
 	public static final String[] colors = new String[] {"black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray",
 			"pink", "lime", "yellow", "light_blue", "magenta", "orange", "white"};
 
-	public BlockConcretePowder(int meta) {
+	public BlockConcrete(int meta) {
 		super(Material.sand);
 		String color = colors[meta];
-		setHardness(0.5F);
-		setResistance(2.5F);
-		setHarvestLevel("shovel", 0);
-		setBlockTextureName("concrete_powder_" + color);
-		setStepSound(soundTypeSand);
-		setBlockName(Utils.getUnlocalisedName(color+"_block_concrete_powder"));
-		setCreativeTab(EtFuturum.enableBlockConcretePowder ? EtFuturum.creativeTab : null);
+		setHardness(1.8F);
+		setResistance(9.0F);
+		setHarvestLevel("pickaxe", 0);
+		setBlockTextureName("concrete_" + color);
+		setStepSound(soundTypePiston);
+		setBlockName(Utils.getUnlocalisedName(color+"_block_concrete"));
+		setCreativeTab(EtFuturum.enableBlockConcrete ? EtFuturum.creativeTab : null);
 	}
-
-	
-
 
 	@Override
 	public boolean isEnabled() {
-		return EtFuturum.enableBlockConcretePowder;
+		return EtFuturum.enableBlockConcrete;
 	}
-
 }

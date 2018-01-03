@@ -124,6 +124,38 @@ tile.etfuturum.daylight_sensor.name=Датчик дневного света
 tile.etfuturum.nether_wart_block.name=Блок адского нароста
 tile.etfuturum.red_nether_bricks.name=Красный адский кирпич
 tile.etfuturum.bone_block.name=Костяной блок
+#
+tile.etfuturum.black_block_concrete_powder.name=Черный Цемент
+tile.etfuturum.green_block_concrete_powder.name=Зеленый Цемент
+tile.etfuturum.brown_block_concrete_powder.name=Коричневый Цемент
+tile.etfuturum.blue_block_concrete_powder.name=Синий Цемент
+tile.etfuturum.purple_block_concrete_powder.name=Пурпурный Цемент
+tile.etfuturum.cyan_block_concrete_powder.name=Бирюзовый Цемент
+tile.etfuturum.silver_block_concrete_powder.name=Светло-серый Цемент
+tile.etfuturum.gray_block_concrete_powder.name=Серый Цемент
+tile.etfuturum.pink_block_concrete_powder.name=Розовый Цемент
+tile.etfuturum.lime_block_concrete_powder.name=Лаймовый Цемент
+tile.etfuturum.yellow_block_concrete_powder.name=Желтый Цемент
+tile.etfuturum.light_blue_block_concrete_powder.name=Светло-синий Цемент
+tile.etfuturum.magenta_block_concrete_powder.name=Сиреневый Цемент
+tile.etfuturum.orange_block_concrete_powder.name=Оранжевый Цемент
+tile.etfuturum.white_block_concrete_powder.name=Белый Цемент
+#
+tile.etfuturum.black_block_concrete.name=Черный Бетон
+tile.etfuturum.green_block_concrete.name=Зеленый Бетон
+tile.etfuturum.brown_block_concrete.name=Коричневый Бетон
+tile.etfuturum.blue_block_concrete.name=Синий Бетон
+tile.etfuturum.purple_block_concrete.name=Пурпурный Бетон
+tile.etfuturum.cyan_block_concrete.name=Бирюзовый Бетон
+tile.etfuturum.silver_block_concrete.name=Светло-серый Бетон
+tile.etfuturum.gray_block_concrete.name=Серый Бетон
+tile.etfuturum.pink_block_concrete.name=Розовый Бетон
+tile.etfuturum.lime_block_concrete.name=Лаймовый Бетон
+tile.etfuturum.yellow_block_concrete.name=Желтый Бетон
+tile.etfuturum.light_blue_block_concrete.name=Светло-синий Бетон
+tile.etfuturum.magenta_block_concrete.name=Сиреневый Бетон
+tile.etfuturum.orange_block_concrete.name=Оранжевый Бетон
+tile.etfuturum.white_block_concrete.name=Белый Бетон
 
 # Banners
 item.banner.black.name=Чёрный флаг

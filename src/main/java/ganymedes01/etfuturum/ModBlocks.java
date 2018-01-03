@@ -43,6 +43,7 @@ import ganymedes01.etfuturum.blocks.SlimeBlock;
 import ganymedes01.etfuturum.blocks.Sponge;
 import ganymedes01.etfuturum.blocks.Stone;
 import ganymedes01.etfuturum.blocks.BlockConcretePowder;
+import ganymedes01.etfuturum.blocks.BlockConcrete;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockWood;
 import net.minecraft.init.Blocks;
@@ -92,6 +93,7 @@ public class ModBlocks {
 	public static final Block[] fences = new Block[BlockWood.field_150096_a.length];
 	public static final Block[] gates = new Block[BlockWood.field_150096_a.length - 1];
 	public static final Block[] block_concrete_powder = new Block[BlockConcretePowder.colors.length];
+	public static final Block[] block_concrete = new Block[BlockConcrete.colors.length];
 
 	static {
 		for (int i = 0; i < doors.length; i++)
@@ -105,6 +107,9 @@ public class ModBlocks {
 
 		for (int i = 0; i < block_concrete_powder.length; i++)
 			block_concrete_powder[i] = new BlockConcretePowder(i);
+		
+		for (int i = 0; i < block_concrete.length; i++)
+			block_concrete[i] = new BlockConcrete(i);
 	}
 
 	public static void init() {
