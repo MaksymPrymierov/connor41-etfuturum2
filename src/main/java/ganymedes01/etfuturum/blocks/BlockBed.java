@@ -10,24 +10,20 @@ import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.DamageSource;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockConcrete extends Block implements IConfigurable {
-
-	public BlockConcrete(int meta) {
-		super(Material.sand);
+public class BlockBed extends net.minecraft.block.BlockBed implements IConfigurable {
+	public BlockBed(int meta) {
+		super();
 		String color = ModBlocks.colors[meta];
-		setHardness(1.8F);
-		setResistance(9.0F);
-		setHarvestLevel("pickaxe", 0);
-		setBlockTextureName("concrete_" + color);
-		setStepSound(soundTypePiston);
-		setBlockName(Utils.getUnlocalisedName(color+"_block_concrete"));
-		setCreativeTab(EtFuturum.enableBlockConcrete ? EtFuturum.creativeTab : null);
+		setBlockTextureName("bed_" + color);
+		setBlockName(Utils.getUnlocalisedName(color+"_bed"));
+		setCreativeTab(EtFuturum.enableBlockBed ? EtFuturum.creativeTab : null);
 	}
 	
 	@Override
 	public boolean isEnabled() {
-		return EtFuturum.enableBlockConcrete;
+		return EtFuturum.enableBlockBed;
 	}
 }

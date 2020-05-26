@@ -18,16 +18,13 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockConcretePowder extends BlockFalling implements IConfigurable {
-
-	public static final String[] colors = new String[] {"black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray",
-			"pink", "lime", "yellow", "light_blue", "magenta", "orange", "white"};
 	private int color_id = 0;
 	private String color = "black";
 
 	public BlockConcretePowder(int meta) {
 		super(Material.sand);
-		String color = colors[meta];
-		if (meta < colors.length) {
+		String color = ModBlocks.colors[meta];
+		if (meta < ModBlocks.colors.length) {
 			color_id = meta;
 		}
 		setHardness(0.5F);

@@ -50,19 +50,22 @@ import net.minecraftforge.event.entity.player.UseHoeEvent;
 		}
 		
 	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
-	   {
+	{
 	    float a = 0;
 		float f = 0.03125F;
-	    return AxisAlignedBB.getBoundingBox((double)((float)x + a), (double)y, (double)((float)z + a), (double)((float)(x + 1) - a), (double)((float)(y + 1) - f), (double)((float)(z + 1) - a));
-	   }
+	    return AxisAlignedBB.getBoundingBox((double)((float)x + a),
+	    		(double)y, (double)((float)z + a),
+	    		(double)((float)(x + 1) - a),
+	    		(double)((float)(y + 1) - f),
+	    		(double)((float)(z + 1) - a));
+	}
 		
 	public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)
-		  {
-		   if (entity.isSneaking()){
-		   } else {
-		    entity.attackEntityFrom(DamageSource.cactus, 1F);
-		   }
-		  }
+	{
+		if (!entity.isSneaking()) {
+			entity.attackEntityFrom(DamageSource.inFire, 1F);
+		}
+	}
 
 	@Override
 	public boolean isEnabled() {

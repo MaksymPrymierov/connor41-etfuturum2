@@ -119,6 +119,7 @@ public class EtFuturum {
 	public static boolean enableBoneBlock = true;
 	public static boolean enableBlockConcretePowder = true;
 	public static boolean enableBlockConcrete = true;
+	public static boolean enableBlockBed = true;
 
 	public static int maxStonesPerCluster = 34;
 

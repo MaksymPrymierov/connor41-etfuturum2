@@ -44,6 +44,7 @@ import ganymedes01.etfuturum.blocks.Sponge;
 import ganymedes01.etfuturum.blocks.Stone;
 import ganymedes01.etfuturum.blocks.BlockConcretePowder;
 import ganymedes01.etfuturum.blocks.BlockConcrete;
+import ganymedes01.etfuturum.blocks.BlockBed;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockWood;
 import net.minecraft.init.Blocks;
@@ -51,6 +52,9 @@ import net.minecraft.item.ItemBlock;
 
 public class ModBlocks {
 
+	public static final String[] colors = new String[] {"black", "red", "green", "brown", "blue", "purple", "cyan", "silver", "gray",
+			"pink", "lime", "yellow", "light_blue", "magenta", "orange", "white"};
+	
 	public static final Block stone = new Stone();
 	public static final Block iron_trapdoor = new IronTrapdoor();
 	public static final Block prismarine = new PrismarineBlocks();
@@ -92,8 +96,9 @@ public class ModBlocks {
 	public static final Block[] doors = new Block[BlockWood.field_150096_a.length - 1];
 	public static final Block[] fences = new Block[BlockWood.field_150096_a.length];
 	public static final Block[] gates = new Block[BlockWood.field_150096_a.length - 1];
-	public static final Block[] block_concrete_powder = new Block[BlockConcretePowder.colors.length];
-	public static final Block[] block_concrete = new Block[BlockConcrete.colors.length];
+	public static final Block[] block_concrete_powder = new Block[colors.length];
+	public static final Block[] block_concrete = new Block[colors.length];
+	public static final Block[] block_bed = new Block[colors.length];
 
 	static {
 		for (int i = 0; i < doors.length; i++)
@@ -105,11 +110,11 @@ public class ModBlocks {
 		for (int i = 0; i < gates.length; i++)
 			gates[i] = new BlockWoodFenceGate(i + 1);
 
-		for (int i = 0; i < block_concrete_powder.length; i++)
+		for (int i = 0; i < colors.length; i++) {
 			block_concrete_powder[i] = new BlockConcretePowder(i);
-		
-		for (int i = 0; i < block_concrete.length; i++)
 			block_concrete[i] = new BlockConcrete(i);
+			block_bed[i] = new BlockBed(i);
+		}
 	}
 
 	public static void init() {
